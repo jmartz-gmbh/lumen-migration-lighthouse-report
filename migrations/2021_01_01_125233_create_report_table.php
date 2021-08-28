@@ -21,6 +21,7 @@ class CreateReportTable extends Migration
                 $table->increments('id');
                 $table->string('type');
                 $table->string('url');
+                $table->integer('report_id');
                 $table->string('json');
                 $table->timestamps();
             });
