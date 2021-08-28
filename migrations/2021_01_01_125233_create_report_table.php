@@ -19,10 +19,7 @@ class CreateReportTable extends Migration
         if(!Schema::hasTable($this->tablename)) {
             Schema::create($this->tablename, function (Blueprint $table) {
                 $table->increments('id');
-                $table->string('type');
                 $table->string('url');
-                $table->integer('report_id');
-                $table->string('json');
                 $table->timestamps();
             });
         }
