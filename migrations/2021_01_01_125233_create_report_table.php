@@ -20,6 +20,7 @@ class CreateReportTable extends Migration
             Schema::create($this->tablename, function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('url');
+                $table->string('hash');
                 $table->timestamps();
             });
         }
